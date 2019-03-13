@@ -1,33 +1,29 @@
-from cmml.data.LoadData import loadDataSet
-from cmml.regression.lasso import lassotest
-from cmml.regression.lasso import standRegres
-from cmml.regression.lasso import lassoRegrespredict
-from cmml.regression.lassow import lassoRegrespredictw
-from cmml.error.rsserror import rssError
-from math import * 
-import numpy
-import pandas as pd
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>初识 Less</title>
+ </head>
 
-trainX,trainY = loadDataSet("zf2.txt")
-
-print (lassotest(trainX,trainY))
-
-#y=lassoRegrespredict(trainX,trainY,[1,2,3,4])
-
-#lassoWeights = lassotest(trainX,trainY)
-
-#crossValidation(trainX,trainY)
-fig = plt.figure()
-ax = fig.add_subplot(111)
-#ax.plot(lassoWeights)
-
-X_train=trainX[1000:]
-Y_train=trainY[1000:]
-X_test=trainX[:1000]
-Y_test=trainY[:1000]
-
-y_test=lassoRegrespredict(trainX,trainY,X_test)
-print (y_test)
-
-error=(rssError(y_test, numpy.asmatrix(Y_test).T))
-print ('error',error)
+</head>
+<body>
+<a class="container" href="http://www.360doc.com/content/16/0817/19/16915_583924625.shtml">from cmml.data.LoadData import loadDataSet</a>
+<a class="container2">from cmml.regression.lasso import lassotest</a>
+<a class="container3">from cmml.regression.lasso import standRegres</a>
+<a class="container4">from cmml.regression.lasso import lassoRegrespredict</a>
+<a class="container5">from cmml.error.rsserror import rssError</a>
+<a class="container6">trainX,trainY = loadDataSet("data.txt")</a>
+<a class="container7">X_train=trainX[1000:]</a>
+<a class="container8">Y_train=trainY[1000:]</a>
+<a class="container8">X_test=trainX[:1000]</a>
+<a class="container8">Y_test=trainY[:1000]</a>
+<a class="container8">y_test=lassoRegrespredict(trainX,trainY,X_test)</a>
+<a class="container8">error=(rssError(y_test, numpy.asmatrix(Y_test).T)))</a>
+</body>
+</html>
+ </body>
+</html>
