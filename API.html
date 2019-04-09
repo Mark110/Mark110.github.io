@@ -6,31 +6,74 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>文档</title>
- </head>
-</head>
+  <title>Document</title>
 <body>
- <p>API Documentation</p>
-<p>回归</p>
-<p>线性模型</p>
-<p>加权线性模型</p>
-<p>Ridge</p>
-<p>lasso</p>
-<p>SCAD</p>
-<p>分类</p>
-<p>逻辑回归</p>
-<p>朴素贝叶斯</p>
-<p>决策树</p>
-<p>随机森林</p>
-<p>KNN</p>
-<p>SVM</p>
-<p>降维</p>
-<p>PCA</p>
-<p>ICA</p>
-<p>CCA</p>
-<p>聚类</p>
-<p>kmeans</p>
-<p>层次聚类</p>
-<p>基于密度的聚类</p>
+<ul class="nav">
+<div class="nav-column">
+	<h3>回归</h3>
+	<ul>
+		<li><a href="#">线性模型</a></li>
+		<li><a href="#">加权最小二乘</a></li>
+		<li><a href="#">lasso</a></li>
+		<li><a href="#">弹性网络</a></li>
+		<li><a href="#">SCAD</a></li>
+    </ul>
+</div>
+<div class="nav-column">
+	<h3>分类</h3>
+	<ul>
+		<li><a href="#">逻辑回归</a></li>
+		<li><a href="#">朴素贝叶斯</a></li>
+		<li><a href="#">KNN</a></li>
+		<li><a href="#">决策树</a></li>
+		<li><a href="#">随机森林</a></li>
+		<li><a href="#">AdaBoost</a></li>
+    </ul>
+</div>
+<div class="nav-column">
+	<h3>降维</h3>
+	<ul>
+		<li><a href="#">PCA</a></li>
+		<li><a href="#">SVD</a></li>
+		<li><a href="#">ICA</a></li>
+		<li><a href="#">CCA</a></li>
+    </ul>
+</div>
+<div class="nav-column">
+	<h3>聚类</h3>
+	<ul>
+		<li><a href="#">kmean</a></li>
+		<li><a href="#">AGNES</a></li>
+		<li><a href="#">DBSCAN</a></li>
+		<li><a href="#">EM</a></li>
+    </ul>
+</div>
+</ul>
+<style>
+*{margin:0px,padding:0px}
+  .nav .nav-column {
+	float:left;
+	width:20%;
+	padding:2.5%;
+}
+.nav .nav-column h3{
+	margin:20px 0 10px 0;
+	line-height:18px;
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:bold;
+	color:#372f2b;
+	text-transform:uppercase;
+}
+.nav .nav-column h3.orange{color:#ff722b;}
+.nav .nav-column li a {
+	display:block;
+	line-height:26px;
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#888888;
+}
+.nav .nav-column li a:hover{color:#666666;}
+</style>
 </body>
 </html>
